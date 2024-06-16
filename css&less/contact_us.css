@@ -1,0 +1,70 @@
+.content {
+  width: 100vw;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: #6B8A7A;
+  box-shadow: 0 0 10px #254336;
+}
+h1,
+h2 {
+  background-color: transparent;
+}
+h2 {
+  border-bottom: 2px solid #254336;
+  padding-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: transparent;
+}
+ul li {
+  background: transparent;
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 5px solid #254336;
+}
+blockquote {
+  border-left: 10px solid #254336;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-style: italic;
+}
+p {
+  background-color: transparent;
+}
+.section {
+  margin-top: 10px;
+  background-color: #6B8A7A;
+}
+strong {
+  background-color: transparent;
+}
+a {
+  background-color: transparent;
+}
+* {
+  color: #254336;
+}
+.contact_link {
+  color: #B7B597;
+}
+.custom-form * {
+  background-color: #6B8A7A;
+}
+#custom-input {
+  background-color: #fff;
+  width: 400px;
+}
+#custom-button {
+  margin-top: 10px;
+  background-color: #B7B597;
+  color: #254336;
+  border-color: #254336;
+  font-weight: 600;
+}
+#message_input {
+  height: 100px;
+}

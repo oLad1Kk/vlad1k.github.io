@@ -1,0 +1,41 @@
+.card-text {
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.custom-card {
+  background-color: #6B8A7A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.news_title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0.25rem;
+  background-color: #6B8A7A;
+  width: 110%;
+  color: #DAD3BE;
+  text-align: center;
+  width: 95%;
+}
+.news_description {
+  width: 110%;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  background-color: #6B8A7A;
+  color: #DAD3BE;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: #254336;
+}
+.bord {
+  background-color: #6B8A7A;
+}
+.custom-card-header {
+  width: 20rem;
+  background-color: #6B8A7A;
+}

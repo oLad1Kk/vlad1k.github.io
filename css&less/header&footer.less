@@ -1,0 +1,273 @@
+@HEADERHEIGHT: 75px;
+@FOOTERHEIGHT: 40px;
+@LINKFONTSIZE: 20px;
+@FOOTERTEXTSIZE: 15px;
+@LOGOSIZE: 50px;
+
+@COLOR1: #254336;
+@COLOR2: #6B8A7A;
+@COLOR3: #B7B597;
+@COLOR4: #DAD3BE;
+
+
+
+*,
+body,
+html {
+    background-color: @COLOR4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+// *
+// {
+//     height: 100%;
+//     background-color: @COLOR4;
+// }
+
+body
+{
+    height: 100%;
+    background-color: @COLOR4;
+}
+.page
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    height: @HEADERHEIGHT;
+    background-color: @COLOR1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+html,
+body {
+height: 100%;
+}
+
+
+.menu {
+    height: 100%;
+    background-color: @COLOR1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.content{
+    flex: 1 1 auto;
+    padding-top: @HEADERHEIGHT;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    // background-color: black;
+    // height: 1000%;
+    // height: 100vh;
+}
+
+
+.link {
+    color: @COLOR4;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: @LINKFONTSIZE;
+    position: relative;
+}
+
+
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: @COLOR2;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    border-radius: 10em;
+}
+
+.link:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.footer {
+
+    height: @FOOTERHEIGHT;
+    background-color: @COLOR1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: @COLOR3;
+    // margin-bottom: 0;
+    // position: relative;
+    font-size: @FOOTERTEXTSIZE;
+    z-index: 10;
+    flex: 0 0 auto;
+
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Гамбургер-меню */
+.menu-icon {
+    margin-right: 0;
+    display: none;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    background-color: @COLOR1;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: @COLOR4;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon span:last-child {
+    margin-bottom: 0;
+}
+
+/* Мобильное меню */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100%;
+    background-color: @COLOR2;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border: 5px solid @COLOR3;
+
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: @COLOR4;
+    padding: 15px;
+}
+
+/* Показ меню при :checked */
+.menu-toggle:checked~.mobile-menu {
+    left: 0;
+}
+
+.menu-toggle:checked+.menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.menu-toggle:checked+.menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked+.menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+
+
+
+.logo {
+    height: @LOGOSIZE;
+    width: @LOGOSIZE;
+    background-size: cover;
+    /* Также можно использовать contain */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+}
+
+
+.phone_logo {
+    position: absolute;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .phone_logo {
+        display: block;
+    }
+
+}
+
+
+.space {
+    height: 50px;
+    background-color: @COLOR4;
+}
+
+// .custom-container
+// {
+//     height: 99vh;
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-self: flex-start;    
+  }
+ 
+
+
+
+
+
+   
+   

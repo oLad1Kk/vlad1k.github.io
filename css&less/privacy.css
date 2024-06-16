@@ -1,0 +1,30 @@
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px #254336;
+  background-color: #6B8A7A;
+  color: #254336;
+}
+.privacy-policy h2 {
+  text-align: center;
+}
+.privacy-policy h3 {
+  margin-top: 20px;
+}
+.privacy-policy p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.privacy-policy {
+  background-color: transparent;
+}
+h2,
+h3,
+p,
+a {
+  background-color: transparent;
+}
+#custom-link {
+  color: #B7B597;
+}

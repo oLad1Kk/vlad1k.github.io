@@ -1,0 +1,49 @@
+.content {
+  width: 100vw;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: #6B8A7A;
+  box-shadow: 0 0 10px #254336;
+}
+h1,
+h2 {
+  background-color: transparent;
+}
+h2 {
+  border-bottom: 2px solid #254336;
+  padding-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: transparent;
+}
+ul li {
+  background: transparent;
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 5px solid #254336;
+}
+blockquote {
+  border-left: 10px solid #254336;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-style: italic;
+}
+p {
+  background-color: transparent;
+}
+.section {
+  background-color: transparent;
+}
+strong {
+  background-color: transparent;
+}
+a {
+  background-color: transparent;
+}
+* {
+  color: #254336;
+}
